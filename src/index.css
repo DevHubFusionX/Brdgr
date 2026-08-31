@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,600;0,700;1,600&family=Mulish:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&family=Syne:wght@600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette — Variants of Blue & Chalk White */
+  --color-chalk: #FBFBFA;
+  --color-chalk-light: #FFFFFF;
+  --color-chalk-dark: #F1F3F5;
+  --color-offwhite: #FBFBFA;
+
+  /* Primary Blues */
+  --color-blue: #2563EB;
+  --color-blue-light: #3B82F6;
+  --color-blue-dark: #1D4ED8;
+  --color-blue-vivid: #0284C7;
+  --color-blue-50: #EFF6FF;
+  --color-blue-100: #DBEAFE;
+  --color-blue-200: #BFDBFE;
+
+  /* Deep Navy & Slate Blues (Replaces harsh pure black) */
+  --color-navy: #0F172A;
+  --color-navy-light: #1E293B;
+  --color-navy-dark: #0A1128;
+  --color-black: #0F172A;
+  --color-black-light: #1E293B;
+  --color-black-dark: #0A1128;
+
+  /* Compatibility mappings */
+  --color-electric: #2563EB;
+  --color-electric-light: #3B82F6;
+  --color-electric-dark: #1D4ED8;
+  --color-orange: #2563EB;
+  --color-orange-light: #3B82F6;
+  --color-orange-dark: #1D4ED8;
+  --color-orange-50: #EFF6FF;
+  --color-orange-100: #DBEAFE;
+
+  /* Neutrals — chalk borders, secondary text, dividers */
+  --color-grey-100: #F1F3F5;
+  --color-grey-200: #E2E8F0;
+  --color-grey-300: #CBD5E1;
+  --color-grey-400: #94A3B8;
+  --color-grey-500: #64748B;
+  --color-grey-600: #475569;
+
+  /* Font stacks */
+  --font-sans: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Space Grotesk', 'Syne', sans-serif;
+  --font-tech: 'Chakra Petch', 'Space Grotesk', sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-navy);
+    background-color: var(--color-chalk);
+    scroll-behavior: smooth;
+  }
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
