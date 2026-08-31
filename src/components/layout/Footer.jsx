@@ -102,9 +102,9 @@ export default function Footer() {
 
           </div>
 
-          {/* Giant Subtle Watermark Typography ("Brdgr") underneath the floating card */}
+          {/* Giant Faint Blue Watermark Typography ("Brdgr") underneath the floating card */}
           <div
-            className="w-full text-center font-display font-bold text-[5.5rem] sm:text-[9rem] md:text-[13rem] lg:text-[17rem] tracking-tighter text-blue/[0.04] select-none pointer-events-none leading-none -mt-8 sm:-mt-16 lg:-mt-20 uppercase overflow-hidden"
+            className="w-full text-center font-display font-bold text-[5.5rem] sm:text-[9rem] md:text-[13rem] lg:text-[17rem] tracking-tighter text-blue/[0.12] select-none pointer-events-none leading-none -mt-8 sm:-mt-16 lg:-mt-20 uppercase overflow-hidden"
             aria-hidden="true"
           >
             Brdgr
